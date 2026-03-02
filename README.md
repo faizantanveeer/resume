@@ -5,6 +5,9 @@ This repository contains the latest version of my professional resume in both La
 I specialize in Machine Learning, Generative AI, and Large Language Models, with hands on experience building production ready AI systems, multi agent RAG architectures, and scalable ML pipelines deployed on Azure and Google Cloud Platform.
 
 ---
+![Resume](resume.png)
+
+---
 
 ## 📄 Files Included
 
