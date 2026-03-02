@@ -1,0 +1,188 @@
+%-------------------------
+% Jake's Resume Template — Most Popular Overleaf ATS Template
+% Adapted for: Faizan Tanveer | AI/ML Engineer
+% Template Source: github.com/jakeryang/resume
+% ATS-Optimized | Overleaf Ready | pdfLaTeX Compatible
+%-------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+%----------FONT----------
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-----------CUSTOM COMMANDS-----------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%===========================================
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Faizan Tanveer} \\ \vspace{4pt}
+    \small
+    \faPhone\ \href{tel:+923252726321}{+92-3252726321} $|$
+    \faEnvelope\ \href{mailto:faizantanveerai@gmail.com}{faizantanveerai@gmail.com} $|$
+    \faLinkedin\ \href{https://linkedin.com/in/faizantanveerr}{faizantanveerr} $|$
+    \faGithub\ \href{https://github.com/faizantanveeer}{faizantanveeer} $|$
+    \faMapMarker*\ Lahore, Pakistan
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Summary}
+\small{
+AI/ML Engineer focused on building practical and scalable Machine Learning and Generative AI solutions using LLMs. Experienced in designing end to end ML pipelines, developing reliable RAG systems, and improving retrieval quality to deliver more accurate and context-aware AI applications. Strong foundation in fine tuning, embeddings, prompt engineering, and deploying production grade solutions on Microsoft Azure and Google Cloud Platform, particularly within Legal and Health Tech domains.
+Previously contributed at \textbf{Tkxel}, where I strengthened data workflows and automated reporting processes, enabling teams to make more reliable and timely decisions. I bring a problem solving mindset and a strong sense of ownership, aiming to create AI systems that deliver measurable business value.
+}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+    {Associate AI/ML Engineer}{Dec 2025 -- Present}
+      {Hazen Technologies Inc.}{Lahore, Pakistan}
+      
+            \resumeItemListStart
+        \resumeItem{Used \textbf{Azure Document Intelligence} to extract structured patient data from medical ledgers for legal case intake at Ged Lawyers, fully replacing manual data entry for a law firm client.}
+        \resumeItem{Engineered \textbf{Syntellio}, a multi-agent RAG system with MCP support, achieving \textbf{60\%+ retrieval accuracy} and \textbf{35\% lower query latency} via semantic search, metadata filtering, and similarity scoring.}
+        \resumeItem{Revamped legacy codebase to \textbf{agentic AI architecture} using LangChain agents and MCP tooling, enabling autonomous multi-step reasoning across Legal and Health Tech workflows.}
+        \resumeItem{Designed \textbf{client-facing analytics dashboards} integrated with live production pipelines for real-time operational reporting.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Business Intelligence Analyst}{Aug 2025 -- Dec 2025}
+      {Tkxel}{Lahore, Pakistan}
+      
+   \resumeItemListStart
+        \resumeItem{Eliminated \textbf{35+ hours/week} of manual reporting by consolidating 5+ dashboards into a unified real-time analytics suite (Power BI, Looker, DAX).}
+        \resumeItem{Designed \textbf{production-grade ETL pipelines} on BigQuery processing \textbf{90GB+ multi-source data}; boosted KPI accuracy by \textbf{25\%} via advanced data cleaning and feature engineering.}
+        \resumeItem{Accelerated reporting speed by \textbf{30\%} with performance-tuned dashboards serving marketing, finance, and operations teams.}
+        \resumeItem{Automated ETL pipelines for preprocessing data with Python \& SQL, cutting data prep time by \textbf{40\%} and enabling faster ML-ready dataset delivery.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Syntellio --- Multi Agent RAG System} $|$ \emph{Python, LangChain, MCP, LLMs, FAISS, Pinecone}}{Hazen Technologies}
+\resumeItemListStart
+\resumeItem{Addressed inconsistent retrieval quality and shallow single step reasoning in existing document Q\&A systems by architecting a multi agent RAG framework with structured multi step decision flows.}
+\resumeItem{Redesigned static pipelines into a scalable agent driven architecture, improving retrieval accuracy by \textbf{60\%+} and reducing response latency by \textbf{35\%}.}
+\resumeItem{Solved context fragmentation issues in Legal and Health Tech documents by improving grounding and answer consistency across large knowledge bases.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{InstaSum --- Instagram Reels AI Summarizer} $|$ \emph{Flask, Whisper, GPT, Azure OpenAI, SQLite, SSE}}{Personal Project}
+\resumeItemListStart
+\resumeItem{Solved the challenge of extracting structured insights from short form video content by building an AI pipeline that automates transcription and summarization.}
+\resumeItem{Mitigated frequent API failures and rate limits by designing a three layer resilient fetching strategy, reducing failure rates by \textbf{40\%+} and ensuring consistent content retrieval.}
+\resumeItem{Enabled real time processing and scalable usage through modular API design and streaming architecture.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      Python, SQL, Machine Learning, Deep Learning, NLP, LLMs, Generative AI, RAG, Agentic AI, Multi-Agent Systems, MCP, LangChain, LangGraph, Azure, GCP, AWS, ETL Pipelines,  Power BI, Looker Studio, Git, Docker
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Management and Technology (UMT)}{Lahore, Pakistan}
+      {Bachelor of Science in Computer Science (BSCS) \textbf{| CGPA: 3.66 / 4.0}}{Oct 2021 -- Jun 2025}
+  \resumeSubHeadingListEnd
+
+% %-----------CERTIFICATIONS-----------
+% \section{Certifications}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%       $\bullet$ Generative AI and LLMs: Architecture and Data Preparation \hfill \\
+%       $\bullet$ Gen AI Foundational Models for NLP \& Language Understanding \hfill \\
+%       $\bullet$ What Is Generative AI? \hfill \\
+%       $\bullet$ Advanced Git and GitHub Practices \hfill \\
+%       $\bullet$ Microsoft Office Specialist: Word (Office 2016)
+%     }}
+%  \end{itemize}
+
+%-------------------------------------------
+\end{document}
